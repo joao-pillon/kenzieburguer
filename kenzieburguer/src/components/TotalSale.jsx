@@ -13,13 +13,13 @@ const TotalSale = ({ currentSale }) => {
       <div className="cartCard">
       <h6>Seu carrinho:</h6> 
         {currentSale.map((sale) => (
-          <li>
-            <Cart key={sale.id} sale={sale} />{" "}
+          <li key={sale.id} >
+            <Cart sale={sale} />{" "}
           </li>
         ))}
       </div>
       <div>
-        <h5>Total: R${cartSumDec}</h5>
+        <h5>Total: R$  {cartSumDec}</h5>
       </div>
     </div>
   );

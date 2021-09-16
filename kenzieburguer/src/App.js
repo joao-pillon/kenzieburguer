@@ -3,7 +3,6 @@ import MenuContainer from "./components/MenuContainer";
 import { useState } from "react";
 
 function App() {
-
   const [products, setProducts] = useState([
     { id: 1, name: "X-Salada", category: "Sanduíches", price: 7.99 },
     { id: 2, name: "X-Picanha", category: "Sanduíches", price: 10.99 },
@@ -16,28 +15,25 @@ function App() {
     { id: 7, name: "Café", category: "Bebidas", price: 2.99 },
   ]);
 
-
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   function showProducts(input) {
     const filtrados = products.filter((product) => {
-      return product.id === input;
+      return product.name === input;
     });
     setFilteredProducts([...filtrados]);
-    setProducts([...filtrados]); 
   }
-
-
 
   const [currentSale, setCurrentSale] = useState([]);
 
-  function handleClick(id) {
+  function handleClick(prod) {
+    //if currentSale.includes() ;;;
     const sale = products.find((selected) => {
-      return selected.id === id;
+      return selected.id === prod;
     });
+
     setCurrentSale([...currentSale, sale]);
   }
-
 
   return (
     <div className="App">
@@ -46,9 +42,7 @@ function App() {
           showProducts={showProducts}
           filteredProducts={filteredProducts}
           products={products}
-          showProducts={showProducts} //
           handleClick={handleClick}
-          currentSale={currentSale}
           currentSale={currentSale}
         ></MenuContainer>
       </header>
