@@ -1,43 +1,108 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, b, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+b,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
 
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-
-.Topo h1{
+.Topo h1 {
   font-size: 50px;
-  font-family: 'Lobster', cursive;
-  text-shadow: 1px -1px 1px rgb(43, 0, 0),
-  -1px 1px 1px rgb(43, 0, 0);
+  font-family: "Lobster", cursive;
+  text-shadow: 1px -1px 1px rgb(43, 0, 0), -1px 1px 1px rgb(43, 0, 0);
   color: rgb(185, 93, 86);
-  text-shadow: 4px 5px 1px rgba(0,0,0,0.6);
+  text-shadow: 4px 5px 1px rgba(0, 0, 0, 0.6);
 }
-.About{
+.About {
   height: 70px;
-    background-image: url("./img/background_sketch.jpg");
-    background-repeat: repeat;
-    background-size:20%;
-    margin-bottom:50px ;
-    width: 100%;
-    opacity: 0.2  ;
-
+  background-image: url("./img/background_sketch.jpg");
+  background-repeat: repeat;
+  background-size: 20%;
+  margin-bottom: 50px;
+  width: 100%;
+  opacity: 0.2;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
@@ -47,12 +112,13 @@ time, mark, audio, video {
 }
 
 hr {
-    border: transparent;
-    background-color:#86000060;
-    padding: 0;
-    margin-top:0;
-    width: 222px;
-    height: 8px;
+  
+  border: transparent;
+  background-color: #86000060;
+  padding: 0;
+  margin-top: 0;
+  width: 222px;
+  height: 8px;
 }
 body {
   background: #272727;
@@ -65,8 +131,6 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
-
 }
 
 .navMenu a {
@@ -79,7 +143,6 @@ body {
   width: 120px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-
 }
 
 .navMenu a:hover {
@@ -128,4 +191,119 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px){
+  .Topo h1 {
+    font-size: 32px;
+  }
+  .About {
+    height: 30px;
+    background-image: url("./img/background_sketch.jpg");
+    background-repeat: repeat;
+    background-size: 20%;
+    width: 100%;
+    opacity: 0.2;
+  }
+  .navMenu a {
+    width: 70px;
+    font-size: 0.5em;
+  }
+  .navMenu {
+    top: 19%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navMenu .dot {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .Topo h1 {
+    font-size: 32px;
+    margin:7px;
+  }
+
+  .hr2{
+    border:dashed rgb(75, 4, 4) 4px;
+    height: 6px ;
+  }
+  .About {
+    height: 35px;
+    background-image: url("./img/background_sketch.jpg");
+    background-repeat: repeat;
+    background-size: 20%;
+    width: 100%;
+    opacity: 0.2;
+  }
+  .navMenu a {
+    width: 70px;
+    font-size: 0.68em;
+  }
+  .navMenu {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navMenu .dot {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1260px) {
+  .Topo h1 {
+    font-size: 47px;
+    margin:10px;
+  }
+  .About {
+    height: 45px;
+    background-image: url("./img/background_sketch.jpg");
+    background-repeat: repeat;
+    background-size: 20%;
+    width: 100%;
+    opacity: 0.2;
+  }
+  .navMenu a {
+    width: 120px;
+    font-size: 1.0em;
+  }
+  .navMenu {
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navMenu .dot {
+
+  }
+}
+
+
+@media only screen and (min-width: 1261px) {
+  .Topo h1 {
+    font-size: 55px;
+    margin:10px;
+  }
+  .About {
+    height: 60px;
+    background-image: url("./img/background_sketch.jpg");
+    background-repeat: repeat;
+    background-size: 20%;
+    width: 100%;
+    opacity: 0.2;
+  }
+  .navMenu a {
+    width: 120px;
+    font-size: 1.0em;
+  }
+  .navMenu {
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 }
