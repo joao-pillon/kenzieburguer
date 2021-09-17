@@ -206,7 +206,7 @@ body {
     opacity: 0.2;
   }
   .navMenu a {
-    width: 70px;
+    width: 50px;
     font-size: 0.5em;
   }
   .navMenu {
@@ -244,7 +244,7 @@ body {
     font-size: 0.68em;
   }
   .navMenu {
-    top: 20%;
+    top: 21%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -275,10 +275,6 @@ body {
     top: 24%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .navMenu .dot {
-
   }
 }
 

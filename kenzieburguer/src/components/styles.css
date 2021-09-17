@@ -34,6 +34,7 @@
   width: 140px;
   padding: 10px;
   font-family: "Abril Fatface", cursive;
+
 }
 
 .Product_Img {
@@ -225,9 +226,7 @@ ul {
   text-align: center;
   justify-content: center;
   text-align: center;
-  width: 70%;
-  right: 30%;
-  left: 30%;
+
 }
 
 .sale {
@@ -291,22 +290,33 @@ h6 {
 
 @media only screen and (min-width: 300px) and (max-width: 767px){
   .Product {
-    width: 45px;
-    padding: 0px;
+    width: 70px;
+
     background: none;
   }
-
+  .ProductsContainer {
+    margin-top:10px;}
   .Product_Img {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     border: none;
   }
+  .ProductA {
+    position: absolute;
+    margin-left: 35%;
+  }
+  .ProductB {
+    position: absolute;
+    top:170px;
+    margin-left: -50%;
 
+  }
   .BurguerPicture,
   .XBurguerPicture,
   .XSaladaPicture {
     height: 100%;
   }
+  
 
   .BigKenziePicture,
   .FriesPicture,
@@ -314,7 +324,7 @@ h6 {
   .CoffePicture,
   .CokePicture,
   .IceScreamPicture {
-    height: 40px;
+    height: 70px;
   }
 
   #name {
@@ -324,6 +334,9 @@ h6 {
     font-size: 7px;
   }
 
+  .sale{
+    font-size: 9px;
+  }
   .Product_ButtonAdd button {
     width: 28px;
     font-size: 7px;
@@ -342,9 +355,11 @@ h6 {
 
   .container {
     top: 24%;
+    height: 75%;
   }
   .Total {
-    margin-top:30px;
+    margin-top:280px;
+    height: 70px;
   }
   .ButtonFilter {
     padding-top: 10px;
@@ -354,11 +369,28 @@ h6 {
   }
   h5,
   h6 {
-    top: 170px;
-    font-size: 12px;
+    top: 315px;
+    font-size: 9px;
   }
+  .cartCard {
+    margin-top: 0px;
+}
+.sale{
+  width: 30px;
+  padding: 5px;
+}
+.footer {
+font-size: 10px;
+  height: 13px;
+  background-image: url("./img/guarana2.jpg");
+  background-size: 20%;
+  filter: invert(1);
+  position: absolute;
+  bottom: 0;
+  font-family: "Abril Fatface", cursive;
 }
 
+}
 
 
 
@@ -414,7 +446,7 @@ h6 {
 
   .Input {
     right: 2%;
-    top: 19%;
+    top: 20%;
   }
 
   .container {
